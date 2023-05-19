@@ -1,0 +1,60 @@
+.container-fluid {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container-fluid .h3 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.container-fluid .row {
+  margin-top: 20px;
+}
+
+.container-fluid dl {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container-fluid dt {
+  font-weight: bold;
+  color: #6c757d;
+  margin-top: 15px;
+}
+
+.container-fluid dd {
+  color: #495057;
+  margin-left: 0;
+}
+
+.container-fluid dd.goals-for {
+  color: #28a745;
+}
+
+.container-fluid dd.goals-against {
+  color: #dc3545;
+}
+
+.container-fluid dd.goal-differential {
+  color: #ffc107;
+}
+
+.container-fluid dd.group-letter {
+  color: #17a2b8;
+}
+
+.container-fluid dd.group-points {
+  color: #6610f2;
+}
+
+.container-fluid hr {
+  border-top: 1px solid #dee2e6;
+}

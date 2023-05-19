@@ -1,3 +1,22 @@
-<p>
-  equipo-list works!
-</p>
+<div *ngIf="selectedEquipo">
+  <app-equipo-detail [equipoDetail]="selectedEquipo"></app-equipo-detail>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let equipo of equipos">
+      <div class="card p-2" style="width: 15rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{equipo.name}} ({{equipo.country}})</h5>
+          <p class="card-text">
+            Games Played: {{equipo.games_played}} <br/>
+            Wins: {{equipo.wins}} <br/>
+            Draws: {{equipo.draws}} <br/>
+            Losses: {{equipo.losses}} <br/>
+          </p>
+          <button class="btn btn-primary" (click)="onSelected(equipo)">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

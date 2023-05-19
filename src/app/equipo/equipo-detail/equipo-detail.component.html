@@ -1,3 +1,24 @@
-<p>
-  equipo-detail works!
-</p>
+<div class="container-fluid">
+  <p class="h3 p-3">{{ equipoDetail.name }} ({{ equipoDetail.country }})</p>
+  <div class="row">
+    <div class="col">
+      <dl>
+        <dt>Goals For</dt>
+        <dd class="goals-for">{{ equipoDetail.goals_for }}</dd>
+        <hr />
+        <dt>Goals Against</dt>
+        <dd class="goals-against">{{ equipoDetail.goals_against }}</dd>
+        <hr />
+        <dt>Goal Differential</dt>
+        <dd class="goal-differential">{{ equipoDetail.goal_differential }}</dd>
+        <hr />
+        <dt>Group Letter</dt>
+        <dd class="group-letter">{{ equipoDetail.group_letter }}</dd>
+        <hr />
+        <dt>Group Points</dt>
+        <dd class="group-points">{{ equipoDetail.group_points }}</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+

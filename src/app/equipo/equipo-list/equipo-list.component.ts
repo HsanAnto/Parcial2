@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EquipoService } from '../equipo.service';
+import { Equipo } from '../equipo-detail';
 
 @Component({
   selector: 'app-equipo-list',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipoListComponent implements OnInit {
 
-  constructor() { }
+  equipos: Array<Equipo> = [];
+  selected: Boolean = false;
+  selectedEquipo!: Equipo
+
+  constructor(private equipoService: EquipoService) { }
+
+  getEquipos(): void {
+    this.equipoService.getEquipos().subscribe((equipos) => {
+      this.equipos = equipos;
+    });
+  }
+
+  onSelected(equipo: Equipo): void {
+    this.selected = true;
+    this.selectedEquipo = equipo;
+  }
 
   ngOnInit() {
+    this.getEquipos();
   }
 
 }

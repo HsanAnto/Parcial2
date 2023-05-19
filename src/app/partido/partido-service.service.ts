@@ -7,7 +7,7 @@ import { Partido } from './partido';
   providedIn: 'root'
 })
 export class PartidoServiceService {
-  private apiUrl: string = environment.baseUrl;
+  private apiUrl: string = environment.baseUrlPartidos;
 
   constructor(private http: HttpClient) { }
 

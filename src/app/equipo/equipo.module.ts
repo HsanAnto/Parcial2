@@ -8,6 +8,6 @@ import { EquipoDetailComponent } from './equipo-detail/equipo-detail.component';
     CommonModule
   ],
   exports: [EquipoListComponent],
-  declarations: [EquipoListComponent, EquipoListComponent]
+  declarations: [EquipoListComponent, EquipoDetailComponent]
 })
 export class EquipoModule { }
